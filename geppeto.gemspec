@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'geppeto'
-  s.version     = '0.1.0'
-  s.date        = '2014-10-11'
+  s.version     = '0.1.1'
+  s.date        = '2014-10-29'
   s.summary     = "Geppeto makes Pinoccio into Ruby."
   s.description = "Geppeto provides a Ruby API to Pinoccio microcontrollers by means of a TCPsocket or a Serial connection, forgoing the need to use api.pinocc.io."
   s.authors     = ["Matt Heitzenroder"]

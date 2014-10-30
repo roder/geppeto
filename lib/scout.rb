@@ -70,14 +70,13 @@ module Geppeto
       args_string = join_args(args)
       command, args_string = process_options(command, args_string)
 
-      case args_string.empty?
-      when true
+      if args_string.empty?
         unless @id.nil?
           command = "command.scout(#{@id}, \"#{command}\")"
         else
           command = "#{command}()"
         end
-      when false
+      else
         unless @id.nil?
           command = "command.scout(#{@id}, \"#{command}\", #{args_string})"
         else
@@ -120,7 +119,7 @@ module Geppeto
           arg_str << arg.to_s
         end
         n += 1
-        arg_str << ", " if n < args.length
+        arg_str << ", " if n < args.length && args[n].class != NilClass
       }
       arg_str
     end

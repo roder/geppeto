@@ -21,47 +21,47 @@ module Geppeto
         @scout.request("led.off")
       end
 
-      def red(ms=0, continuous=0)
+      def red(ms = nil, continuous = nil)
         @scout.request("led.red", ms, continuous)
       end
 
-      def green(ms=0, continuous=0)
+      def green(ms = nil, continuous = nil)
         @scout.request("led.green", ms, continuous)
       end
 
-      def blue(ms=0, continuous=0)
+      def blue(ms = nil, continuous = nil)
         @scout.request("led.blue", ms, continuous)
       end
 
-      def cyan(ms=0, continuous=0)
+      def cyan(ms = nil, continuous = nil)
         @scout.request("led.cyan", ms, continuous)
       end
 
-      def purple(ms=0, continuous=0)
+      def purple(ms = nil, continuous = nil)
         @scout.request("led.purple", ms, continuous)
       end
 
-      def magenta(ms=0, continuous=0)
+      def magenta(ms = nil, continuous = nil)
         @scout.request("led.magenta", ms, continuous)
       end
 
-      def yellow(ms=0, continuous=0)
+      def yellow(ms = nil, continuous = nil)
         @scout.request("led.yellow", ms, continuous)
       end
 
-      def orange(ms=0, continuous=0)
+      def orange(ms = nil, continuous = nil)
         @scout.request("led.orange", ms, continuous)
       end
 
-      def white(ms=0, continuous=0)
+      def white(ms = nil, continuous = nil)
         @scout.request("led.white", ms, continuous)
       end
 
-      def torch(ms=0, continuous=0)
+      def torch(ms = nil, continuous = nil)
         @scout.request("led.torch", ms, continuous )
       end
 
-      def blink(red, green, blue, millis=500, continuous=0)
+      def blink(red, green, blue, millis=500, continuous = nil)
         @scout.request("led.blink", red, green, blue, millis, continuous)
       end
 
